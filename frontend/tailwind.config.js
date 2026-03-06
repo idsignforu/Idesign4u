@@ -7,12 +7,23 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			outfit: ['Outfit', 'sans-serif'],
+  			'dm-sans': ['DM Sans', 'sans-serif'],
+  			mono: ['JetBrains Mono', 'monospace'],
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			purple: {
+  				400: '#9F5BFF',
+  				500: '#7B2FF7',
+  				600: '#5B10C4',
+  				900: '#1a0a35',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
