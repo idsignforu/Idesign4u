@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, Phone, MapPin, Instagram, MessageCircle, Loader2 } from "lucide-react";
+import { Send, Mail, Phone, MapPin, Instagram, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import axios from "axios";
 
@@ -276,16 +276,25 @@ export const ContactSection = () => {
               <p className="text-gray-400 mb-6 text-sm">
                 Prefer to chat directly? Reach out to us on WhatsApp for faster response.
               </p>
-              <a
-                href="https://wa.me/919281410305?text=Hi%2C%20I%27m%20interested%20in%20your%20web%20design%20services"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3 px-6 bg-[#25D366] hover:bg-[#20bd5a] rounded-full text-white font-medium transition-colors"
-                data-testid="whatsapp-cta"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Chat on WhatsApp
-              </a>
+             <a
+  href="https://wa.me/919281410305?text=Hi%2C%20I%27m%20interested%20in%20your%20web%20design%20services"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-3 w-full py-3 px-6 bg-[#25D366] hover:bg-[#20bd5a] rounded-full text-white font-medium transition-colors"
+  data-testid="whatsapp-cta"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="20"
+    height="20"
+    fill="white"
+  >
+    <path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.889.757 5.6 2.074 7.945L.396 32l7.84-1.63a15.89 15.89 0 007.764 1.98h.006c8.836 0 16-7.164 16-16S24.842.396 16 .396zM16 29.634c-2.56 0-5.06-.68-7.236-1.968l-.52-.308-4.65.968.99-4.533-.338-.533A13.25 13.25 0 012.75 16.4c0-7.33 5.96-13.29 13.29-13.29 3.55 0 6.88 1.38 9.39 3.89a13.2 13.2 0 013.9 9.39c0 7.33-5.96 13.29-13.29 13.29z"/>
+  </svg>
+
+  Chat on WhatsApp
+</a>
             </div>
 
             {/* Service Area */}
