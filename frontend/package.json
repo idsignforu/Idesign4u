@@ -60,8 +60,7 @@
   "start": "craco start",
   "build": "craco build",
   "test": "craco test",
-  "postinstall": "npm install --legacy-peer-deps"
-},
+  },
   "browserslist": {
     "production": [
       ">0.2%",
