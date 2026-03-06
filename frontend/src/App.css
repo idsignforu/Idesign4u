@@ -16,9 +16,9 @@
   height: 200%;
   top: -50%;
   left: -50%;
-  background: radial-gradient(circle at 30% 20%, rgba(123, 47, 247, 0.15) 0%, transparent 40%),
-              radial-gradient(circle at 70% 80%, rgba(159, 91, 255, 0.1) 0%, transparent 40%),
-              radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 20%, rgba(123, 47, 247, 0.25) 0%, transparent 40%),
+              radial-gradient(circle at 70% 80%, rgba(159, 91, 255, 0.2) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.08) 0%, transparent 50%);
   animation: gradientMove 20s ease-in-out infinite;
 }
 
