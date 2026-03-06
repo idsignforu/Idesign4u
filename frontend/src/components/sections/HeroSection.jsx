@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const HeroSection = () => {
   return (
     <section
-      className="relative min-h-screen flex items-center pt-40 pb-20 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-32 pb-16 overflow-hidden"
       data-testid="hero-section"
     >
       {/* Floating UI Elements */}
@@ -79,15 +79,15 @@ export const HeroSection = () => {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5, delay: 0.1 }}
-  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
+  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6 leading-tight text-center max-w-4xl mx-auto px-4"
 >
-  <span className="block text-white whitespace-nowrap">
-    Launch Your Business Website
-  </span>
+ <span className="block text-white">
+Launch Your Business Website
+</span>
 
-  <span className="block text-gradient-purple whitespace-nowrap">
-    With One-Time Or Monthly Plans
-  </span>
+<span className="block text-gradient-purple text-2xl sm:text-3xl md:text-4xl">
+With One-Time Or Monthly Plans
+</span>
 </motion.h1>
 
           {/* Subheadline */}
