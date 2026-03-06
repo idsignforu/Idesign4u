@@ -45,6 +45,35 @@ export const HeroSection = () => {
             <span className="text-sm text-purple-300">Premium Web Design Studio</span>
           </motion.div>
 
+         {/* Logo with Glow Effect */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="flex justify-center mb-10 relative"
+>
+
+  {/* Glow Background */}
+  <div className="absolute w-56 h-56 bg-purple-600/30 rounded-full blur-3xl opacity-60"></div>
+
+  {/* Animated Light Ring */}
+  <motion.div
+    animate={{ rotate: 360 }}
+    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+    className="absolute w-48 h-48 border border-purple-500/30 rounded-full"
+  ></motion.div>
+
+  {/* Logo */}
+  <motion.img
+    src="https://customer-assets.emergentagent.com/job_3b9058a0-7844-4852-8656-1f94a27f5842/artifacts/wtv9ay46_WhatsApp%20Image%202026-03-06%20at%203.51.44%20PM-Photoroom.png"
+    alt="I Design 4 U"
+    className="relative w-32 sm:w-36 md:w-40 lg:w-44 drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]"
+    animate={{ y: [0, -8, 0] }}
+    transition={{ duration: 4, repeat: Infinity }}
+  />
+
+</motion.div>
+
           {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -52,9 +81,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
           >
-            <span className="text-white">Premium Websites That</span>
-            <br />
-            <span className="text-gradient-purple">Grow Your Business</span>
+            <span className="text-white">Launch Your Business Website</span>
+<br />
+<span className="text-gradient-purple">
+With One-Time Or Monthly Plans
+</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -64,8 +95,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10"
           >
-            We design modern high-performance websites for businesses worldwide.
-            Stand out from the competition with stunning designs that convert.
+            Launch a professional high-converting website for your business.
+Choose between affordable monthly plans or a one-time website build.
           </motion.p>
 
           {/* CTA Buttons */}
