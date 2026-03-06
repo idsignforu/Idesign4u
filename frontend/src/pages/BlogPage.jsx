@@ -36,21 +36,21 @@ export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get(`${API}/blog`);
-        setPosts(Array.isArray(response.data) ? response.data : response.data.posts || []);
-      } catch (error) {
-        console.error("Error fetching blog posts:", error);
-        // If API fails, show empty state
-        setPosts([]);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchPosts = async () => {
+    try {
+      const response = await axios.get("/blog-data.json");
+      console.log("Blog data:", response.data);
+      setPosts(response.data);
+    } catch (error) {
+      console.error("Error fetching blog posts:", error);
+      setPosts([]);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    fetchPosts();
-  }, []);
+  fetchPosts();
+}, []);
 
   // Seed blog posts if empty
   useEffect(() => {
@@ -68,18 +68,16 @@ export default function BlogPage() {
     seedPosts();
   }, [loading, posts.length]);
 
- const filteredPosts = Array.isArray(posts)
-  ? posts.filter((post) => {
-      const matchesCategory =
-        selectedCategory === "All" || post.category === selectedCategory;
+ const filteredPosts = posts.filter((post) => {
+  const matchesCategory =
+    selectedCategory === "All" || post.category === selectedCategory;
 
-      const matchesSearch =
-  (post.title || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
-  (post.description || "").toLowerCase().includes(searchQuery.toLowerCase());
+  const matchesSearch =
+    (post.title || "").toLowerCase().includes(searchQuery.toLowerCase()) ||
+    (post.description || "").toLowerCase().includes(searchQuery.toLowerCase());
 
-      return matchesCategory && matchesSearch;
-    })
-  : [];
+  return matchesCategory && matchesSearch;
+});
 
   return (
     <div className="pt-40 pb-24" data-testid="blog-page">
