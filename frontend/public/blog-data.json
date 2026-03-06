@@ -28,5 +28,175 @@
 "category":"Startup Websites",
 "read_time":"6 min read",
 "published_date":"2026-03-04"
+},
+  {
+"id":4,
+"slug":"affordable-website-design-small-business",
+"title":"Affordable Website Design for Small Businesses",
+"description":"Affordable website design solutions for startups and small businesses to build their online presence.",
+"featured_image":"https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+"category":"Affordable Websites",
+"read_time":"5 min read",
+"published_date":"2026-03-05"
+},
+{
+"id":5,
+"slug":"website-cost-india",
+"title":"How Much Does Website Design Cost in India",
+"description":"Complete guide about website design pricing in India for startups and small businesses.",
+"featured_image":"https://images.unsplash.com/photo-1487014679447-9f8336841d58",
+"category":"Website Design Tips",
+"read_time":"6 min read",
+"published_date":"2026-03-06"
+},
+{
+"id":6,
+"slug":"low-cost-website-startups",
+"title":"Low Cost Website Development for Startups",
+"description":"Learn how startups can build professional websites without spending a lot of money.",
+"featured_image":"https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+"category":"Startup Websites",
+"read_time":"5 min read",
+"published_date":"2026-03-07"
+},
+{
+"id":7,
+"slug":"why-business-needs-website",
+"title":"Why Every Business Needs a Website",
+"description":"Discover why a professional website is important for every modern business.",
+"featured_image":"https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+"category":"Small Business Websites",
+"read_time":"5 min read",
+"published_date":"2026-03-08"
+},
+{
+"id":8,
+"slug":"website-benefits-local-business",
+"title":"Benefits of Having a Website for Local Businesses",
+"description":"Local businesses can reach more customers online with a professional website.",
+"featured_image":"https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+"category":"Small Business Websites",
+"read_time":"5 min read",
+"published_date":"2026-03-09"
+},
+{
+"id":9,
+"slug":"business-growth-with-website",
+"title":"How Websites Help Small Businesses Grow",
+"description":"A well designed website can increase leads, trust and sales for small businesses.",
+"featured_image":"https://images.unsplash.com/photo-1556155092-490a1ba16284",
+"category":"Online Business Growth",
+"read_time":"6 min read",
+"published_date":"2026-03-10"
+},
+{
+"id":10,
+"slug":"website-vs-instagram-business",
+"title":"Website vs Instagram for Business",
+"description":"Compare websites and social media pages for growing your business online.",
+"featured_image":"https://images.unsplash.com/photo-1557838923-2985c318be48",
+"category":"Website Design Tips",
+"read_time":"4 min read",
+"published_date":"2026-03-11"
+},
+{
+"id":11,
+"slug":"professional-website-importance",
+"title":"Why Professional Website Design Matters",
+"description":"A professionally designed website builds trust and increases conversions.",
+"featured_image":"https://images.unsplash.com/photo-1547658719-da2b51169166",
+"category":"Website Design Tips",
+"read_time":"5 min read",
+"published_date":"2026-03-12"
+},
+{
+"id":12,
+"slug":"get-customers-with-website",
+"title":"How to Get More Customers Using a Website",
+"description":"Learn how a website can generate leads and customers for your business.",
+"featured_image":"https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+"category":"Online Business Growth",
+"read_time":"6 min read",
+"published_date":"2026-03-13"
+},
+{
+"id":13,
+"slug":"website-design-tips-beginners",
+"title":"Website Design Tips for Beginners",
+"description":"Essential website design tips for beginners starting their online journey.",
+"featured_image":"https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+"category":"Website Design Tips",
+"read_time":"5 min read",
+"published_date":"2026-03-14"
+},
+{
+"id":14,
+"slug":"best-website-features-business",
+"title":"Best Website Features for Business Owners",
+"description":"Important features every business website must include for success.",
+"featured_image":"https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+"category":"Website Design Tips",
+"read_time":"5 min read",
+"published_date":"2026-03-15"
+},
+{
+"id":15,
+"slug":"high-converting-website",
+"title":"How to Build a High Converting Website",
+"description":"Design strategies that turn website visitors into paying customers.",
+"featured_image":"https://images.unsplash.com/photo-1467232004584-a241de8bcf5d",
+"category":"Online Business Growth",
+"read_time":"6 min read",
+"published_date":"2026-03-16"
+},
+{
+"id":16,
+"slug":"landing-page-design-tips",
+"title":"Landing Page Design Tips for More Leads",
+"description":"Create landing pages that convert visitors into customers.",
+"featured_image":"https://images.unsplash.com/photo-1559027615-cd4628902d4a",
+"category":"Website Design Tips",
+"read_time":"5 min read",
+"published_date":"2026-03-17"
+},
+{
+"id":17,
+"slug":"seo-friendly-website-design",
+"title":"SEO Friendly Website Design Guide",
+"description":"Learn how to design websites that rank higher in Google search.",
+"featured_image":"https://images.unsplash.com/photo-1507238691740-187a5b1d37b8",
+"category":"SEO Tips",
+"read_time":"7 min read",
+"published_date":"2026-03-18"
+},
+{
+"id":18,
+"slug":"website-design-seo-impact",
+"title":"How Website Design Impacts SEO",
+"description":"Website structure and design can directly affect search rankings.",
+"featured_image":"https://images.unsplash.com/photo-1559027615-cd4628902d4a",
+"category":"SEO Tips",
+"read_time":"6 min read",
+"published_date":"2026-03-19"
+},
+{
+"id":19,
+"slug":"mobile-friendly-websites",
+"title":"Importance of Mobile Friendly Websites",
+"description":"Why responsive website design is essential in today's mobile world.",
+"featured_image":"https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+"category":"Website Design Tips",
+"read_time":"5 min read",
+"published_date":"2026-03-20"
+},
+{
+"id":20,
+"slug":"website-speed-seo",
+"title":"How Website Speed Affects SEO",
+"description":"Fast websites rank higher on Google and provide better user experience.",
+"featured_image":"https://images.unsplash.com/photo-1559027615-cd4628902d4a",
+"category":"SEO Tips",
+"read_time":"6 min read",
+"published_date":"2026-03-21"
 }
 ]
