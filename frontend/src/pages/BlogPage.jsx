@@ -57,7 +57,7 @@ export default function BlogPage() {
     const seedPosts = async () => {
       if (!loading && posts.length === 0) {
         try {
-          await axios.post(`${API}/seed-blog`);
+          await axios.get(`${API}/seed-blog`);
           const response = await axios.get(`${API}/blog`);
           setPosts(Array.isArray(response.data) ? response.data : response.data.posts || []);
         } catch (error) {
