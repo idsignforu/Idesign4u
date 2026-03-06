@@ -76,17 +76,19 @@ export const HeroSection = () => {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
-          >
-            <span className="text-white">Launch Your Business Website</span>
-<br />
-<span className="text-gradient-purple">
-With One-Time Or Monthly Plans
-</span>
-          </motion.h1>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.1 }}
+  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
+>
+  <span className="block text-white whitespace-nowrap">
+    Launch Your Business Website
+  </span>
+
+  <span className="block text-gradient-purple whitespace-nowrap">
+    With One-Time Or Monthly Plans
+  </span>
+</motion.h1>
 
           {/* Subheadline */}
           <motion.p
