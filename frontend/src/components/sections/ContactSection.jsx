@@ -4,7 +4,7 @@ import { Send, Mail, Phone, MapPin, Instagram, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import axios from "axios";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+
 
 const businessTypes = [
   "Small Business",
@@ -63,27 +63,34 @@ export const ContactSection = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    try {
-      await axios.post(`${API}/contact`, formData);
-      toast.success("Message sent successfully! We'll get back to you soon.");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        business_type: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("Contact form error:", error);
-      toast.error("Failed to send message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  try {
+
+    await axios.post(
+      "https://formspree.io/f/xpqywwjg",
+      formData
+    );
+
+    toast.success("Message sent successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      business_type: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error(error);
+    toast.error("Failed to send message");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="py-24 relative" data-testid="contact-section">
