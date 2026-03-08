@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import "@/App.css";
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 
 // Pages
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       <AnimatedBackground />
-      <Router>
+      <BrowserRouter>
         <ScrollToTop />
         <ScrollProgress />
         <AnnouncementBar />
@@ -57,7 +57,7 @@ function App() {
         <Footer />
         <WhatsAppButton />
         <Toaster position="top-right" theme="dark" />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
