@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowLeft, User, Tag, Share2 } from "lucide-react";
-import axios from "axios";
 import { toast } from "sonner";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -16,15 +14,19 @@ export default function BlogPostPage() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`${API}/blog/${slug}`);
-        setPost(response.data);
-        
-        // Fetch related posts from same category
-        const allPosts = await axios.get(`${API}/blog`);
-        const related = allPosts.data
-          .filter((p) => p.category === response.data.category && p.slug !== slug)
-          .slice(0, 3);
-        setRelatedPosts(related);
+      const response = await fetch("/blog-data.json");
+const posts = await response.json();
+
+const foundPost = posts.find((p) => p.slug === slug);
+setPost(foundPost);
+
+if (foundPost) {
+  const related = posts
+    .filter((p) => p.category === foundPost.category && p.slug !== slug)
+    .slice(0, 3);
+
+  setRelatedPosts(related);
+}
       } catch (error) {
         console.error("Error fetching blog post:", error);
       } finally {
@@ -196,7 +198,7 @@ export default function BlogPostPage() {
             <span className="text-gray-400 font-medium">Tags:</span>
           </div>
           <div className="flex flex-wrap gap-2">
-            {post.tags.map((tag) => (
+            {post.tags?.map((tag) => (
               <span
                 key={tag}
                 className="px-3 py-1.5 rounded-full text-sm bg-white/5 text-gray-400 border border-white/10"
