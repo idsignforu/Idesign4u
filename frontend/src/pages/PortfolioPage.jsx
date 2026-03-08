@@ -38,6 +38,33 @@ const projects = [
     desktopPreview: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&h=500&fit=crop",
     mobilePreview: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=400&h=700&fit=crop",
   },
+  {
+  id: 5,
+  title: "Interior Design Website",
+  description: "Modern interior design company website showcasing premium interior services and project portfolio.",
+  category: "Interior Design",
+  url: "https://interior.idesign4u.in/",
+  desktopPreview: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=500&fit=crop",
+  mobilePreview: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=700&fit=crop",
+},
+  {
+  id: 6,
+  title: "IT Services Website",
+  description: "Professional IT services website showcasing technology solutions, support services, and digital expertise.",
+  category: "Technology & IT",
+  url: "https://smile-tech-hub-1.preview.emergentagent.com/",
+  desktopPreview: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop",
+  mobilePreview: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=700&fit=crop",
+},
+  {
+  id: 7,
+  title: "Beauty & Skincare Website",
+  description: "Elegant beauty and skincare brand website showcasing services, products, and client experiences.",
+  category: "Beauty & Skincare",
+  url: "https://modest-elegance-24.preview.emergentagent.com/",
+  desktopPreview: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=500&fit=crop",
+  mobilePreview: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=700&fit=crop",
+},
 ];
 
 const containerVariants = {
