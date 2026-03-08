@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       <AnimatedBackground />
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <ScrollProgress />
         <AnnouncementBar />
@@ -57,7 +57,7 @@ function App() {
         <Footer />
         <WhatsAppButton />
         <Toaster position="top-right" theme="dark" />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
